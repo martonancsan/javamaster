@@ -1,0 +1,19 @@
+model
+users
+    username
+    userid
+overall_statistics
+    userid
+    good
+    fail
+word_statistics
+    wordid
+    userid
+    fail
+    good
+dictionary
+    userid
+    wordid
+    phrase_source
+    phrase_target
+

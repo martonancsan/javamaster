@@ -1,0 +1,46 @@
+Learner 
+    starts application
+    shows login window
+    starts session
+    shows main window
+
+Session 
+    gets main window buttonclicked
+        start training - starts learner
+            instantiate Learner
+            hides main window
+            shows training window
+        record phrases - starts recorder
+            instantiate Recorder
+            hides main window
+            shows training window
+        choose another user - closes session
+        exit - exits application
+    
+Learner
+    initiates training session
+    creates statistics
+    shows up first phrase 
+    buttonclicked
+        check - show good or fail, correct translation, update statistics for word and user
+        next phrase - show next phrase, reset screen, update statistics for word
+        pause trainig - hide trainig window, show main window
+        (if learning is on, button shows in main window "Resume training")
+        stop training - hide trainin
+        exit - quit application
+        
+// dictionary is needed to encapsulate logic for 
+// 
+Recorder
+    buttonclicked
+        record phrase
+            parses phrases
+            create dictionary
+            creates the update sql query
+            writes to database
+            displays result (4 phrases memorized/all phrases deleted for "dog")
+            empty dictionary
+        stop recording phrases
+            hide recording window
+            show main window
+        exit - quit application

@@ -1,0 +1,9 @@
+CREATE DATABASE learner;
+
+CREATE TABLE user (username VARCHAR(20), userid);
+CREATE TABLE overall_statistics (userid, good, fail);
+CREATE TABLE word_statistics (wordid, userid, fail, good);
+CREATE TABLE dictionary (userid, wordid, phrase_source, phrase_target);
+
+# SHOW TABLES;
+# DESCRIBE USER;
